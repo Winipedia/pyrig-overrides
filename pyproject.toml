@@ -1,9 +1,9 @@
 [project]
 name = "pyrig-overrides"
-version = "0.1.0"
+version = "1.0.0"
 description = "A simple package that contains overrides for pyrig itself."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "pyrig>=14.0.0",
     "pyrig-codecov>=1.3.6",
@@ -17,6 +17,7 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Operating System :: OS Independent",
