@@ -1122,6 +1122,19 @@ wheels = [
 ]
 
 [[package]]
+name = "pyrig-codecov"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyrig" },
+    { name = "pyrig-dev" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/45/21/6af05637a3318fe635d6b1b1857443374c896b24c7723554a635985979d9/pyrig_codecov-1.4.0.tar.gz", hash = "sha256:e52092e83e738466bb09b71119c0ead319e75a2a542d6c94314fc9a64e122ce5", size = 5306, upload-time = "2026-06-18T20:22:59.956Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/0e/7666cdd3fa0195dc94431187fbacc9a11d4209dc4991fd8df38a5e615080/pyrig_codecov-1.4.0-py3-none-any.whl", hash = "sha256:e5ad0832cff61378e4ac1f0f9b39701d5e5ecbaddfcd223734b54826ab375ee6", size = 8883, upload-time = "2026-06-18T20:23:00.875Z" },
+]
+
+[[package]]
 name = "pyrig-dev"
 version = "3.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1162,7 +1175,9 @@ dev = [
     { name = "pip-audit" },
     { name = "prek" },
     { name = "pygithub" },
+    { name = "pyrig-codecov" },
     { name = "pyrig-dev" },
+    { name = "pyrig-pypi" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "pytest-mock" },
@@ -1188,7 +1203,9 @@ dev = [
     { name = "pip-audit", specifier = ">=2.10.1" },
     { name = "prek", specifier = ">=0.4.5" },
     { name = "pygithub", specifier = ">=2.9.1" },
+    { name = "pyrig-codecov", specifier = ">=1.4.0" },
     { name = "pyrig-dev", specifier = ">=2.9.2" },
+    { name = "pyrig-pypi", specifier = ">=1.6.0" },
     { name = "pytest", specifier = ">=9.1.0" },
     { name = "pytest-cov", specifier = ">=7.1.0" },
     { name = "pytest-mock", specifier = ">=3.15.1" },
