@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "2.0.0"
+version = "2.1.0"
 description = "A simple package that contains overrides for pyrig itself."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -82,6 +82,7 @@ dev = [
     "ruff>=0.15.17",
     "rumdl>=0.2.18",
     "ty>=0.0.50",
+    "typos>=1.47.2",
 ]
 
 [build-system]
