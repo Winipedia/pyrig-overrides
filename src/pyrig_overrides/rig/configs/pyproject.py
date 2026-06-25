@@ -2,11 +2,6 @@
 
 Extends the base pyproject.toml configuration with PyPI classifiers and keywords
 relevant to pyrig's purpose as a project scaffolding and automation toolkit.
-Only active when pyrig itself is the project being configured.
-
-The conditional class definition gates subclass registration so that
-``__subclasses__()`` only discovers this class when running inside pyrig's own
-repository, leaving dependent projects unaffected.
 """
 
 from pyrig_pypi.rig.configs.pyproject import (
@@ -20,14 +15,10 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
     Extends the base ``PyprojectConfigFile`` with PyPI metadata specific to
     pyrig: development status, intended audience, topic classifiers, and
     project-related keywords for package discovery.
-
-    Only defined when pyrig is the current project (via the module-level
-    conditional). Projects that use pyrig as a dependency get the base class
-    defaults instead.
     """
 
     def make_keywords(self) -> list[str]:
-        """Override pyrig's method to add pyrig-specific keywords."""
+        """Override the base class method to add pyrig-specific keywords."""
         return [
             *super().make_keywords(),
             "project-setup",
@@ -43,7 +34,7 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
         ]
 
     def make_classifiers(self) -> list[str]:
-        """Override pyrig's method to add pyrig-specific classifiers."""
+        """Override the base class method to add pyrig-specific classifiers."""
         return [
             *super().make_classifiers(),
             "Development Status :: 5 - Production/Stable",

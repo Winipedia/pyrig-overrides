@@ -9,14 +9,13 @@ from pyrig.rig.tools.dependencies.auditor import (
 class DependencyAuditor(BaseDependencyAuditor):
     """Pyrig-specific dependency auditor.
 
-    Overrides the base DependencyAuditor to apply pyrig-specific overrides.
+    Subclasses the base DependencyAuditor to provide an override point for
+    pyrig-specific customization.
     """
 
     def audit_args(self, *args: str) -> Args:
         """Override pip-audit command arguments construction.
 
-        It is used to ignore irrelevant vulnerabilities in dependencies,
-        so that the CI/CD passes the dependency audit check. It delegates
-        to the base whenever nothing needs to be ignored.
+        Delegates entirely to the base class implementation.
         """
         return super().audit_args(*args)
