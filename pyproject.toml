@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "2.5.0"
+version = "2.6.0"
 description = "A simple package that contains overrides for pyrig itself."
 readme = "README.md"
 requires-python = ">=3.12"
