@@ -31,3 +31,31 @@
 > A simple package that contains overrides for pyrig itself.
 
 ---
+
+## Overview
+
+pyrig-overrides carries the project overrides applied to
+[pyrig](https://github.com/Winipedia/pyrig)'s own repository. It is a maintenance
+package for pyrig itself — not a general-purpose plugin — added as a development
+dependency to the pyrig project.
+
+## Installation
+
+```bash
+uv add pyrig-overrides --dev
+uv run pyrig sync
+```
+
+## How it works
+
+The package overrides two pyrig classes:
+
+- **Project metadata** — extends the generated `pyproject.toml` with
+  pyrig-specific PyPI trove classifiers and discovery keywords.
+- **Dependency audit** — an extension point for adjusting the arguments passed
+  to `pip-audit`.
+
+## API Reference
+
+For class- and method-level details, see the [API Reference](api.md), generated
+automatically from the source.

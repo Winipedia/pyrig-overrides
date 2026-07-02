@@ -31,3 +31,22 @@
 > A simple package that contains overrides for pyrig itself.
 
 ---
+
+## Overview
+
+pyrig-overrides carries the project overrides applied to
+[pyrig](https://github.com/Winipedia/pyrig)'s own repository — PyPI metadata and
+a dependency-audit tweak. It is a maintenance package for pyrig itself, not a
+general-purpose plugin for your projects.
+
+## What it overrides
+
+- **Project metadata** — pyrig-specific PyPI classifiers and keywords added to
+  `pyproject.toml`.
+- **Dependency audit** — an extension point for customizing the `pip-audit`
+  command.
+
+## Documentation
+
+Full documentation, including the auto-generated API reference, is available on
+the [documentation site](https://Winipedia.github.io/pyrig-overrides).
