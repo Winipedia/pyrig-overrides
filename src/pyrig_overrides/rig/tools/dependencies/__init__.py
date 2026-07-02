@@ -1,1 +1,1 @@
-"""Package initialization."""
+"""Pyrig-specific overrides for dependency tool wrappers."""

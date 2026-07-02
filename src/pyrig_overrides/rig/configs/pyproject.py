@@ -12,13 +12,13 @@ from pyrig_pypi.rig.configs.pyproject import (
 class PyprojectConfigFile(BasePyprojectConfigFile):
     """Pyrig-specific pyproject.toml configuration.
 
-    Extends the base ``PyprojectConfigFile`` with PyPI metadata specific to
-    pyrig: development status, intended audience, topic classifiers, and
-    project-related keywords for package discovery.
+    Adds PyPI metadata specific to pyrig: development status, intended
+    audience, topic classifiers, and project-related keywords for package
+    discovery.
     """
 
     def make_keywords(self) -> list[str]:
-        """Override the base class method to add pyrig-specific keywords."""
+        """Return the base keywords plus pyrig-specific discovery keywords."""
         return [
             *super().make_keywords(),
             "project-setup",
@@ -34,7 +34,7 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
         ]
 
     def make_classifiers(self) -> list[str]:
-        """Override the base class method to add pyrig-specific classifiers."""
+        """Return the base trove classifiers plus pyrig-specific classifiers."""
         return [
             *super().make_classifiers(),
             "Development Status :: 5 - Production/Stable",

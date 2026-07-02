@@ -1,1 +1,1 @@
-"""The top-level package for the project."""
+"""Pyrig-specific overrides for pyrig's own configuration and tooling."""
