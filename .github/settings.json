@@ -1,7 +1,7 @@
 {
     "repository": {
         "name": "pyrig-overrides",
-        "description": "A simple package that contains overrides for pyrig itself.",
+        "description": "A simple package that contains overrides for pyrig.",
         "default_branch": "main",
         "delete_branch_on_merge": true,
         "allow_update_branch": true,

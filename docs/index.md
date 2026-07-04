@@ -28,7 +28,7 @@
 
 ---
 
-> A simple package that contains overrides for pyrig itself.
+> A simple package that contains overrides for pyrig.
 
 ---
 
