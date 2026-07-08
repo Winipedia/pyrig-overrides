@@ -17,22 +17,6 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
     discovery.
     """
 
-    def make_keywords(self) -> list[str]:
-        """Return the base keywords plus pyrig-specific discovery keywords."""
-        return [
-            *super().make_keywords(),
-            "project-setup",
-            "scaffolding",
-            "boilerplate",
-            "project-template",
-            "automation",
-            "configuration",
-            "developer-tools",
-            "code-quality",
-            "ci-cd",
-            "devops",
-        ]
-
     def make_classifiers(self) -> list[str]:
         """Return the base trove classifiers plus pyrig-specific classifiers."""
         return [
@@ -47,4 +31,20 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
             "Topic :: Software Development :: Testing",
             "Topic :: System :: Software Distribution",
             "Topic :: System :: Installation/Setup",
+        ]
+
+    def make_keywords(self) -> list[str]:
+        """Return the base keywords plus pyrig-specific discovery keywords."""
+        return [
+            *super().make_keywords(),
+            "project-setup",
+            "scaffolding",
+            "boilerplate",
+            "project-template",
+            "automation",
+            "configuration",
+            "developer-tools",
+            "code-quality",
+            "ci-cd",
+            "devops",
         ]
