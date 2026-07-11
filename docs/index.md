@@ -1,4 +1,4 @@
-# pyrig-overrides Documentation
+# Home
 
 <!-- ci/cd -->
 [![CI](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-overrides/health_check.yml?label=CI&logo=github)](https://github.com/Winipedia/pyrig-overrides/actions/workflows/health_check.yml)
@@ -48,12 +48,15 @@ uv run pyrig sync
 
 ## How it works
 
-The package overrides two pyrig classes:
+The package overrides three pyrig classes:
 
 - **Project metadata** — extends the generated `pyproject.toml` with
   pyrig-specific PyPI trove classifiers and discovery keywords.
 - **Dependency audit** — an extension point for adjusting the arguments passed
   to `pip-audit`.
+- **Docs config** — disables mkdocstrings' default member filter in the
+  generated `mkdocs.yml`, so pyrig's single-underscore override methods are
+  documented in the API reference.
 
 ## API Reference
 

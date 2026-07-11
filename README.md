@@ -35,9 +35,9 @@
 ## Overview
 
 pyrig-overrides carries the project overrides applied to
-[pyrig](https://github.com/Winipedia/pyrig)'s own repository — PyPI metadata and
-a dependency-audit tweak. It is a maintenance package for pyrig itself, not a
-general-purpose plugin for your projects.
+[pyrig](https://github.com/Winipedia/pyrig)'s own repository — PyPI metadata, a
+dependency-audit tweak, and a docs config tweak. It is a maintenance package for
+pyrig itself, not a general-purpose plugin for your projects.
 
 ## What it overrides
 
@@ -45,6 +45,8 @@ general-purpose plugin for your projects.
   `pyproject.toml`.
 - **Dependency audit** — an extension point for customizing the `pip-audit`
   command.
+- **Docs config** — disables mkdocstrings' default member filter so pyrig's
+  single-underscore override methods are documented in the API reference.
 
 ## Documentation
 
