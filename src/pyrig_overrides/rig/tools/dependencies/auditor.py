@@ -9,6 +9,6 @@ from pyrig.rig.tools.dependencies.auditor import (
 class DependencyAuditor(BaseDependencyAuditor):
     """Extension point for applying pyrig-specific `pip-audit` customization."""
 
-    def audit_args(self, *args: str) -> Args:
+    def check_args(self, *args: str) -> Args:
         """Overrides the base to adjust the arguments passed to `pip-audit`."""
-        return super().audit_args(*args)
+        return super().check_args(*args)

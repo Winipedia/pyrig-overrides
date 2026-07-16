@@ -17,10 +17,10 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
     discovery.
     """
 
-    def make_classifiers(self) -> list[str]:
+    def classifiers_configs(self) -> list[str]:
         """Return the base trove classifiers plus pyrig-specific classifiers."""
         return [
-            *super().make_classifiers(),
+            *super().classifiers_configs(),
             "Development Status :: 5 - Production/Stable",
             "Environment :: Console",
             "Intended Audience :: Developers",
@@ -33,10 +33,10 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
             "Topic :: System :: Installation/Setup",
         ]
 
-    def make_keywords(self) -> list[str]:
+    def keywords_configs(self) -> list[str]:
         """Return the base keywords plus pyrig-specific discovery keywords."""
         return [
-            *super().make_keywords(),
+            *super().keywords_configs(),
             "project-setup",
             "scaffolding",
             "boilerplate",

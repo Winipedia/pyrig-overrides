@@ -6,16 +6,16 @@ from pyrig.rig.tools.dependencies.auditor import DependencyAuditor
 class TestDependencyAuditor:
     """Test class."""
 
-    def test_audit_args(self) -> None:
+    def test_check_args(self) -> None:
         """Test method."""
-        args = DependencyAuditor.I.audit_args()
+        args = DependencyAuditor.I.check_args()
         ignore_vulns_indexes = [
             i + 1 for i, arg in enumerate(args) if arg == "--ignore-vuln"
         ]
         vulns = [args[i] for i in ignore_vulns_indexes]
         # run pip-audit without the flags and assert that all vulns are in the result
         # so if this test fails then we need to adjust the override vulns
-        base_args = DependencyAuditor().audit_args()
+        base_args = DependencyAuditor().check_args()
         result = base_args.run(check=False)
         content = result.stdout + result.stderr
         for vuln in vulns:

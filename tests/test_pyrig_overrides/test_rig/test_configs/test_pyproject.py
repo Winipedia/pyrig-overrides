@@ -6,13 +6,13 @@ from pyrig_pypi.rig.configs.pyproject import PyprojectConfigFile
 class TestPyprojectConfigFile:
     """Test class."""
 
-    def test_make_keywords(self) -> None:
+    def test_keywords_configs(self) -> None:
         """Test method."""
-        assert "code-quality" in PyprojectConfigFile.I.make_keywords()
+        assert "code-quality" in PyprojectConfigFile.I.keywords_configs()
 
-    def test_make_classifiers(self) -> None:
+    def test_classifiers_configs(self) -> None:
         """Test method."""
         assert (
             "Development Status :: 5 - Production/Stable"
-            in PyprojectConfigFile.I.make_classifiers()
+            in PyprojectConfigFile.I.classifiers_configs()
         )

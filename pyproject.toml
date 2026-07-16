@@ -1,136 +1,136 @@
 [project]
 name = "pyrig-overrides"
-version = "4.2.4"
+version = "4.6.0"
 description = "A simple package that contains overrides for pyrig."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "pyrig>=18.3.4",
-    "pyrig-pypi>=3.1.2",
-    "pyrig-runtime>=3.5.2",
-]
 license = "MIT"
 license-files = [
-    "LICENSE",
+  "LICENSE",
 ]
-classifiers = [
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "Programming Language :: Python :: 3.14",
-    "Operating System :: OS Independent",
-    "Typing :: Typed",
-    "Development Status :: 5 - Production/Stable",
-    "Environment :: Console",
-    "Intended Audience :: Developers",
-    "Topic :: Software Development :: Build Tools",
-    "Topic :: Software Development :: Code Generators",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Software Development :: Quality Assurance",
-    "Topic :: Software Development :: Testing",
-    "Topic :: System :: Software Distribution",
-    "Topic :: System :: Installation/Setup",
+authors = [
+  { name = "Winipedia" },
+]
+maintainers = [
+  { name = "Winipedia" },
 ]
 keywords = [
-    "pyrig",
-    "project-setup",
-    "scaffolding",
-    "boilerplate",
-    "project-template",
-    "automation",
-    "configuration",
-    "developer-tools",
-    "code-quality",
-    "ci-cd",
-    "devops",
+  "automation",
+  "boilerplate",
+  "ci-cd",
+  "code-quality",
+  "configuration",
+  "developer-tools",
+  "devops",
+  "project-setup",
+  "project-template",
+  "pyrig",
+  "scaffolding",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Code Generators",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+  "Topic :: System :: Installation/Setup",
+  "Topic :: System :: Software Distribution",
+  "Typing :: Typed",
+]
+dependencies = [
+  "pyrig>=18.3.4",
+  "pyrig-pypi>=3.1.2",
+  "pyrig-runtime>=3.5.2",
 ]
 
-[[project.authors]]
-name = "Winipedia"
-
-[[project.maintainers]]
-name = "Winipedia"
-
 [project.urls]
-Homepage = "https://github.com/Winipedia/pyrig-overrides"
-Documentation = "https://Winipedia.github.io/pyrig-overrides"
-Source = "https://github.com/Winipedia/pyrig-overrides"
-Issues = "https://github.com/Winipedia/pyrig-overrides/issues"
 Changelog = "https://github.com/Winipedia/pyrig-overrides/releases"
+Documentation = "https://Winipedia.github.io/pyrig-overrides"
+Homepage = "https://github.com/Winipedia/pyrig-overrides"
+Issues = "https://github.com/Winipedia/pyrig-overrides/issues"
+Source = "https://github.com/Winipedia/pyrig-overrides"
 
 [project.scripts]
 pyrig-overrides = "pyrig_runtime.rig.cli.main:main"
 
 [dependency-groups]
 dev = [
-    "bandit>=1.9.4",
-    "deptry>=0.25.1",
-    "detect-secrets>=1.5.0",
-    "mkdocs>=1.6.1",
-    "mkdocs-material>=9.7.6",
-    "mkdocs-mermaid2-plugin>=1.2.3",
-    "mkdocstrings[python]>=1.0.5",
-    "pip-audit>=2.10.1",
-    "prek>=0.4.8",
-    "pyrig>=18.3.4",
-    "pyrig-codecov>=3.2.6",
-    "pyrig-pypi>=3.1.2",
-    "pytest>=9.1.1",
-    "pytest-cov>=7.1.0",
-    "ruff>=0.15.21",
-    "rumdl>=0.2.30",
-    "ty>=0.0.58",
-    "typos>=1.48.0",
+  "bandit",
+  "deptry",
+  "detect-secrets",
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocs-mermaid2-plugin",
+  "mkdocstrings[python]",
+  "pip-audit",
+  "pre-commit-hooks",
+  "prek",
+  "pyrig",
+  "pyrig-codecov>=3.3.0",
+  "pyrig-pypi>=3.5.0",
+  "pytest",
+  "pytest-cov",
+  "pytest-randomly",
+  "ruff",
+  "rumdl",
+  "ryl",
+  "shellcheck-py",
+  "shfmt-py",
+  "tombi",
+  "ty",
+  "typos",
 ]
 
 [build-system]
 requires = [
-    "uv_build",
+  "uv-build",
 ]
 build-backend = "uv_build"
-
-[tool.ruff.lint]
-select = [
-    "ALL",
-]
-ignore = [
-    "COM812",
-    "ANN401",
-]
-
-[tool.ruff.lint.per-file-ignores]
-"tests/**/*.py" = [
-    "S101",
-]
-
-[tool.ruff.lint.pydocstyle]
-convention = "google"
-
-[tool.ruff.format]
-docstring-code-format = true
-
-[tool.pytest]
-testpaths = [
-    "tests",
-]
-addopts = [
-    "--cov=pyrig_overrides",
-    "--cov-branch",
-    "--cov-fail-under=100",
-    "--cov-report=term-missing:skip-covered",
-    "--cov-report=xml",
-]
-filterwarnings = [
-    "error",
-]
-strict = true
 
 [tool.deptry]
 root = "src"
 
 [tool.deptry.per_rule_ignores]
 DEP002 = [
-    "pyrig-runtime",
+  "pyrig-runtime",
 ]
+
+[tool.pytest]
+addopts = [
+  "--cov-branch",
+  "--cov-fail-under=100",
+  "--cov-report=term-missing:skip-covered",
+  "--cov-report=xml",
+  "--cov=pyrig_overrides",
+]
+filterwarnings = [
+  "error",
+]
+strict = true
+testpaths = [
+  "tests",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+  "ALL",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+  "S101",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
