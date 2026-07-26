@@ -1,7 +1,8 @@
-"""Pyrig-specific pyproject.toml configuration overrides.
+"""Pyrig-specific `pyproject.toml` configuration overrides.
 
-Extends the base pyproject.toml configuration with PyPI classifiers and keywords
-relevant to pyrig's purpose as a project scaffolding and automation toolkit.
+Extends the base `pyproject.toml` configuration with PyPI classifiers and
+keywords relevant to pyrig's purpose as a project scaffolding and automation
+toolkit.
 """
 
 from pyrig_pypi.rig.configs.pyproject import (
@@ -10,11 +11,10 @@ from pyrig_pypi.rig.configs.pyproject import (
 
 
 class PyprojectConfigFile(BasePyprojectConfigFile):
-    """Pyrig-specific pyproject.toml configuration.
+    """Pyrig-specific `pyproject.toml` configuration.
 
-    Adds PyPI metadata specific to pyrig: development status, intended
-    audience, topic classifiers, and project-related keywords for package
-    discovery.
+    Adds PyPI trove classifiers and keywords specific to pyrig on top of the
+    base configuration.
     """
 
     def classifiers_configs(self) -> list[str]:
