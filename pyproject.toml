@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "4.18.9"
+version = "4.18.12"
 description = "A simple package that contains overrides for pyrig."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -70,7 +70,6 @@ dev = [
   "mkdocs-material",
   "mkdocs-mermaid2-plugin",
   "mkdocstrings[python]",
-  "pip-audit",
   "pre-commit-hooks",
   "prek",
   "pyrig",
