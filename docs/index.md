@@ -60,13 +60,15 @@ uv run pyrig sync
 
 ## How it works
 
-The package overrides two pyrig classes:
+The package overrides three pyrig classes:
 
 - **Project metadata** — extends the generated `pyproject.toml` with
   pyrig-specific PyPI trove classifiers and discovery keywords.
 - **Docs config** — disables mkdocstrings' default member filter in the
   generated `mkdocs.yml`, so pyrig's single-underscore override methods are
   documented in the API reference.
+- **Tool dependencies** — excludes pyrig itself from its own dev dependencies it
+  declares automatically.
 
 ## API Reference
 

@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "4.18.17"
+version = "4.19.0"
 description = "A simple package that contains overrides for pyrig."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -46,7 +46,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pyrig>=18.3.4",
+  "pyrig>=18.36.5",
   "pyrig-pypi>=3.1.2",
   "pyrig-runtime>=3.5.2",
 ]
@@ -72,7 +72,6 @@ dev = [
   "mkdocstrings[python]",
   "pre-commit-hooks",
   "prek",
-  "pyrig",
   "pyrig-codecov>=3.3.0",
   "pyrig-fixtures>=2.15.0",
   "pyrig-pypi>=3.5.0",

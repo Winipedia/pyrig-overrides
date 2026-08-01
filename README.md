@@ -47,16 +47,9 @@
 ## Overview
 
 pyrig-overrides carries the project overrides applied to
-[pyrig](https://github.com/Winipedia/pyrig)'s own repository — PyPI metadata and
-a docs config tweak. It is a maintenance package for pyrig itself, not a
-general-purpose plugin for your projects.
-
-## What it overrides
-
-- **Project metadata** — pyrig-specific PyPI classifiers and keywords added to
-  `pyproject.toml`.
-- **Docs config** — disables mkdocstrings' default member filter so pyrig's
-  single-underscore override methods are documented in the API reference.
+[pyrig](https://github.com/Winipedia/pyrig)'s own repository.
+It is a maintenance package for pyrig itself, not a general-purpose
+plugin for other projects.
 
 ## Documentation
 
