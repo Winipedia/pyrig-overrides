@@ -75,6 +75,7 @@ dev = [
   "pytest",
   "pytest-cov",
   "pytest-randomly",
+  "pytest-xdist>=3.8.0",
   "ruff",
   "rumdl",
   "ryl",
@@ -107,6 +108,8 @@ addopts = [
   "--cov-report=term-missing:skip-covered",
   "--cov-report=xml",
   "--cov=pyrig_overrides",
+  "--dist=worksteal",
+  "--numprocesses=auto",
 ]
 filterwarnings = [
   "error",
