@@ -1,4 +1,4 @@
-"""Pyrig-specific `mkdocs.yml` configuration overrides."""
+"""Pyrig-specific documentation configuration overrides."""
 
 from typing import Any
 
@@ -8,7 +8,7 @@ from pyrig.rig.configs.docs.builder import (
 
 
 class DocsBuilderConfigFile(BaseDocsBuilderConfigFile):
-    """Pyrig-specific `mkdocs.yml` configuration.
+    """Pyrig-specific documentation configuration.
 
     Disables mkdocstrings' default member filter, which hides single-underscore
     names. pyrig's core abstractions use single-underscore methods (e.g.
@@ -20,15 +20,11 @@ class DocsBuilderConfigFile(BaseDocsBuilderConfigFile):
         """Return the base structure with mkdocstrings' member filter disabled.
 
         Returns:
-            The base `mkdocs.yml` structure with an empty mkdocstrings
-            `filters` list.
+            The configs structure with an empty mkdocstrings `filters` list.
         """
         configs = super()._configs()
-        mkdocstrings_plugin = next(
-            plugin
-            for plugin in configs["plugins"]
-            if isinstance(plugin, dict) and "mkdocstrings" in plugin
-        )
-        options = mkdocstrings_plugin["mkdocstrings"]["handlers"]["python"]["options"]
+        options = configs["project"]["plugins"]["mkdocstrings"]["handlers"]["python"][
+            "options"
+        ]
         options["filters"] = []
         return configs

@@ -1,1 +1,1 @@
-"""Pyrig-specific overrides for MkDocs documentation configuration."""
+"""Pyrig-specific overrides for documentation configuration."""
