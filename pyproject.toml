@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "4.20.5"
+version = "4.20.8"
 description = "A simple package that contains overrides for pyrig."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -110,6 +110,7 @@ addopts = [
   "--cov=pyrig_overrides",
   "--dist=worksteal",
   "--numprocesses=auto",
+  "--report-chars=a",
 ]
 filterwarnings = [
   "error",
