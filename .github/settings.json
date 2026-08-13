@@ -2,6 +2,7 @@
   "repository": {
     "name": "pyrig-overrides",
     "description": "A simple package that contains overrides for pyrig.",
+    "homepage": "https://Winipedia.github.io/pyrig-overrides",
     "default_branch": "main",
     "delete_branch_on_merge": true,
     "allow_update_branch": true,
