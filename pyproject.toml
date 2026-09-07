@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "4.20.42"
+version = "4.20.44"
 description = "A simple package that contains overrides for pyrig."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -63,12 +63,14 @@ pyrig-overrides = "pyrig_runtime.rig.cli.main:main"
 
 [dependency-groups]
 dev = [
+  "actionlint-py>=1.7.12.24",
   "bandit",
   "deptry",
   "detect-secrets",
   "mkdocstrings[python]",
   "pre-commit-hooks",
   "prek",
+  "pyflakes>=3.4.0",
   "pyrig-codecov>=3.3.0",
   "pyrig-fixtures>=2.15.0",
   "pyrig-pypi>=3.5.0",
@@ -85,6 +87,7 @@ dev = [
   "ty",
   "typos",
   "zensical>=0.0.52",
+  "zizmor>=1.30.0",
 ]
 
 [build-system]
