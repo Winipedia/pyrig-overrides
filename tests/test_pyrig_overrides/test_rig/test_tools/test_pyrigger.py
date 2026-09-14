@@ -19,7 +19,7 @@ class TestPyrigger:
         assert PyrigPyrigger.I.dev_dependencies() == ()
         assert PyrigPyrigger.L is Pyrigger
 
-        dev_dependencies = PyprojectConfigFile.I.dev_dependencies()
+        dev_dependencies = PyprojectConfigFile.I.project_dev_dependencies()
         dev_dependencies = tuple(
             distribution_requirement_as_module_name(dep) for dep in dev_dependencies
         )
