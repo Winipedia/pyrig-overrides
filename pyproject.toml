@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "4.20.60"
+version = "4.20.62"
 description = "A simple package that contains overrides for pyrig."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -72,6 +72,7 @@ dev = [
   "prek>=0.5.3",
   "pyflakes>=3.4.0",
   "pyrig-codecov>=3.17.31",
+  "pyrig-codeql>=1.0.0",
   "pyrig-fixtures>=2.24.59",
   "pyrig-pypi>=3.20.28",
   "pytest>=9.1.1",
