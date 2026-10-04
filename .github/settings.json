@@ -105,6 +105,9 @@
       ]
     }
   ],
+  "fork_pr_contributor_approval": {
+    "approval_policy": "all_external_contributors"
+  },
   "topics": [
     "automation",
     "boilerplate",
@@ -116,17 +119,14 @@
     "developer-tools",
     "devops",
     "github-actions",
+    "infrastructure-as-code",
     "project-generator",
     "project-maintenance",
     "project-scaffolding",
     "project-setup",
     "pyrig",
-    "pyrig-runtime",
     "python-project",
     "test-generation",
     "test-scaffolding"
-  ],
-  "fork_pr_contributor_approval": {
-    "approval_policy": "all_external_contributors"
-  }
+  ]
 }

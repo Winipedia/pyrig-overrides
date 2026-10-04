@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-overrides"
-version = "4.23.15"
+version = "4.24.0"
 description = "A simple package that contains overrides for pyrig."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -25,12 +25,12 @@ keywords = [
   "developer-tools",
   "devops",
   "github-actions",
+  "infrastructure-as-code",
   "project-generator",
   "project-maintenance",
   "project-scaffolding",
   "project-setup",
   "pyrig",
-  "pyrig-runtime",
   "python-project",
   "test-generation",
   "test-scaffolding",
