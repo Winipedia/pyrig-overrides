@@ -5,6 +5,8 @@ keywords relevant to pyrig's purpose as a project scaffolding and automation
 toolkit.
 """
 
+from typing import override
+
 from pyrig_pypi.rig.configs.pyproject import (
     PyprojectConfigFile as BasePyprojectConfigFile,
 )
@@ -17,6 +19,7 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
     base configuration.
     """
 
+    @override
     def classifiers_configs(self) -> list[str]:
         """Return the base trove classifiers plus pyrig-specific classifiers."""
         return [
@@ -33,6 +36,7 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
             "Topic :: System :: Installation/Setup",
         ]
 
+    @override
     def keywords_configs(self) -> list[str]:
         """Return the base keywords plus pyrig-specific discovery keywords."""
         return [

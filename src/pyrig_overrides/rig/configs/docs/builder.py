@@ -1,6 +1,6 @@
 """Pyrig-specific documentation configuration overrides."""
 
-from typing import Any
+from typing import Any, override
 
 from pyrig.rig.configs.docs.builder import (
     DocsBuilderConfigFile as BaseDocsBuilderConfigFile,
@@ -16,6 +16,7 @@ class DocsBuilderConfigFile(BaseDocsBuilderConfigFile):
     the API reference needs to document them.
     """
 
+    @override
     def _configs(self) -> dict[str, Any]:
         """Return the base structure with mkdocstrings' member filter disabled.
 
