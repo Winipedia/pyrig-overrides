@@ -1012,7 +1012,7 @@ wheels = [
 
 [[package]]
 name = "pyrig-overrides"
-version = "4.25.68"
+version = "4.25.70"
 source = { editable = "." }
 dependencies = [
     { name = "pyrig" },
